@@ -1,24 +1,16 @@
 import React from 'react'
 import {Link} from 'gatsby' 
 
-import Footer from '../components/footer'
-import Header from '../components/header'
+import Layout from '../components/layout'
+import Head from '../components/head'
 
 const IndexPage = () => {
-  return (
-    <div>
-      <Header />
-      <h1>Hii</h1>
+  return(
+    <Layout>
+      <Head title="Home"/>
+      <h1>Hello</h1>
       <h2>I'm Visal !!</h2>
-      <p>
-        <Link to="/about">About Me </Link>
-        <br/>
-        <Link to="/contact">Contact Me </Link>
-        <br/>
-        <Link to="/blog">Blog </Link>
-      </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
